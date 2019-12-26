@@ -1,0 +1,20 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.btn-group {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    display: flex;
+}
+
+.btn-group .btn-item {
+    border-radius: 10px;
+    background-color: #000;
+    padding: 20px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
