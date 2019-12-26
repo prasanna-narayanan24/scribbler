@@ -5,11 +5,7 @@ function setup() {
   angleMode(DEGREES);
   background(bgColor);
 
-  for (let i = 0; i < width; i += 50) {
-    stroke(0, 0, 255)
-    strokeWeight(2)
-    line(0, i, width, i)
-  }
+  drawMarkerLines()
 }
 
 function saveCanvas() {
@@ -19,11 +15,15 @@ function saveCanvas() {
 function clearCanvas() {
   background(bgColor);
 
-  for (let i = 0; i < width; i += 50) {
-    stroke(0, 0, 255)
-    strokeWeight(2)
-    line(0, i, width, i)
-  }
+  drawMarkerLines()
+}
+
+function drawMarkerLines() {
+  // for (let i = 0; i < width; i += 50) {
+  //   stroke(0, 0, 255)
+  //   strokeWeight(2)
+  //   line(0, i, width, i)
+  // }
 }
 
 function draw() {
