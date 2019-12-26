@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+body {
+    overflow: hidden;
+}
+
 .btn-group {
     position: fixed;
     bottom: 30px;
