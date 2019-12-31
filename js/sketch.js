@@ -1,4 +1,6 @@
-bgColor = 255;
+let bgColor = 255;
+let toSaveFilenameAs = "scribbler-canvas"
+let extension = "png";
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
@@ -8,8 +10,12 @@ function setup() {
   drawMarkerLines()
 }
 
-function saveCanvas() {
-  save("canvas", "png");
+function handleFilename(event) {
+  toSaveFilenameAs = event.target.value;
+}
+
+function saveThisCanvas() {
+  saveCanvas(canvas, toSaveFilenameAs, extension)
 }
 
 function clearCanvas() {

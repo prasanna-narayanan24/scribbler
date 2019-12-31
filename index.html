@@ -8,10 +8,11 @@
     <title>Scribbler</title>
 </head>
 <body scroll="no">
+    <input placeholder="filename" id="canvas-filename" onchange="handleFilename(event)" type="text" />
     <div id="m-canvas"></div>
 
     <div class="btn-group">
-        <buttin class="btn-item" onclick="saveCanvas()" id="save-canvas">save</buttin>
+        <buttin class="btn-item" onclick="saveThisCanvas()" id="save-canvas">save</buttin>
         <buttin class="btn-item" onclick="clearCanvas()" id="clear-canvas">clear</buttin>
     </div>
     <script src="js/p5.js"></script>
